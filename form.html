@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web 2</title>
+</head>
+
+<body>
+    <form action="insert.php" method="post" oninput="z.value=parseInt(x.value)+parseInt(y.value)">
+        
+        <table>
+
+            <tr>
+                <td>name:<b style="color:brown;">*</b></td>
+                <td> <input type="text" name="fname" placeholder="name in uppercase"
+                        required></td>
+            </tr>
+            <tr>
+                <td>surname:<b style="color:brown;">*</b> </td>
+                <td><input type="text" name="lname"
+                        placeholder="name in uppercase" required></td>
+            </tr>
+            <tr>
+                <td>number:</td>
+                <td><input type="number" name="mobile" required></td>
+            </tr>
+           
+            <tr>
+                <td>password:</td>
+                <td><input type="password" name="pass" required></td>
+                
+            </tr>
+
+            <tr>
+                <td>city:
+                </td>
+                <td><select name="city">
+                    <option value="select">select</option>
+                    <option value="vadodara">vadodara</option>
+                    <option value="surat">surat</option>
+                    <option value="mumbai">mumbai</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td>address:</td>
+                <td><address><textarea name ="address" rows="5" cols="25
+                    "placeholder="address"></textarea></Address></td>
+            </tr>
+           
+            <tr>
+                <td>
+                    id:
+                </td>
+                <td>
+                    <input type="number" id="x">
+                    <input type="range" id="y" value="45">
+                    <output id="z" for="x y"></output>
+                </td>
+            </tr>
+      <tr>
+        <input type="submit">
+      </tr>
+        </table>
+      
+
+    </form >
+</body>
+
+</html>
